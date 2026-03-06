@@ -1,280 +1,91 @@
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Zona Komputer Jepara</title>
-
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial;
-}
-
-body{
-background:#f5f7fb;
-color:#333;
-}
-
-header{
-background:#0d47a1;
-color:white;
-text-align:center;
-padding:60px 20px;
-}
-
-header img{
-width:120px;
-margin-bottom:15px;
-}
-
-.container{
-max-width:1100px;
-margin:auto;
-padding:40px 20px;
-}
-
-.card{
-background:white;
-padding:30px;
-border-radius:12px;
-margin-bottom:30px;
-box-shadow:0 8px 20px rgba(0,0,0,0.08);
-}
-
-h2{
-color:#0d47a1;
-margin-bottom:15px;
-}
-
-.services{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:20px;
-}
-
-.service{
-background:#eef3ff;
-padding:20px;
-border-radius:10px;
-text-align:center;
-font-weight:bold;
-}
-
-.packages{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:20px;
-}
-
-.package{
-background:#eef3ff;
-padding:25px;
-border-radius:10px;
-text-align:center;
-}
-
-.package span{
-font-size:22px;
-font-weight:bold;
-color:#0d47a1;
-}
-
-.map{
-margin-top:20px;
-border-radius:10px;
-overflow:hidden;
-}
-
-.btn{
-display:inline-block;
-margin-top:15px;
-padding:12px 22px;
-background:#0d47a1;
-color:white;
-text-decoration:none;
-border-radius:6px;
-}
-
-.whatsapp{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-color:white;
-padding:14px 18px;
-border-radius:50px;
-text-decoration:none;
-font-weight:bold;
-}
-
-footer{
-background:#0d47a1;
-color:white;
-text-align:center;
-padding:20px;
-}
-
-</style>
+<title>INDOKONEKTA</title>
+<link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
 <header>
-
-<img src="logo-zona.svg">
-
-<h1>Zona Komputer Jepara</h1>
-
-<p>Penyedia Internet Hotspot & Jaringan Komputer</p>
-
-<p>Didukung oleh PT Zona Indokonekta Prima</p>
-
+<img src="img/logo.png" class="logo">
+<nav>
+<a href="#">Beranda</a>
+<a href="#paket">Paket Internet</a>
+<a href="#daftar">Daftar</a>
+<a href="#area">Cek Area</a>
+<a href="#kontak">Kontak</a>
+</nav>
 </header>
 
+<section class="hero">
+<h1>INTERNET CEPAT & STABIL</h1>
+<p>Solusi Internet, Hotspot & Fiber Optic</p>
+<br>
+<a class="btn" href="#daftar">Daftar Sekarang</a>
+</section>
 
-<div class="container">
-
-<div class="card">
-
-<h2>Tentang Kami</h2>
-
-<p>
-
-Zona Komputer Jepara adalah penyedia layanan internet RT/RW Net,
-hotspot voucher, instalasi jaringan komputer, CCTV,
-dan penjualan perangkat IT untuk wilayah Jepara dan sekitarnya.
-
-</p>
-
-</div>
-
-
-<div class="card">
-
-<h2>Layanan Kami</h2>
-
-<div class="services">
-
-<div class="service">Internet RT/RW Net</div>
-
-<div class="service">Hotspot Voucher</div>
-
-<div class="service">Instalasi Jaringan</div>
-
-<div class="service">Jual Beli Komputer</div>
-
-<div class="service">CCTV & Networking</div>
-
-</div>
-
-</div>
-
-
-<div class="card">
-
-<h2>Paket Internet</h2>
-
+<div class="container" id="paket">
+<h2 style="text-align:center">Pilihan Paket Internet</h2>
 <div class="packages">
-
-<div class="package">
+<div class="card basic">
 <h3>Basic</h3>
-<span>10 Mbps</span>
-<p>Internet stabil untuk rumah</p>
+<div class="price">150rb</div>
+<p>10 Mbps</p>
+<p>Unlimited</p>
+</div>
+<div class="card home">
+<h3>Home</h3>
+<div class="price">250rb</div>
+<p>20 Mbps</p>
+<p>Unlimited</p>
+</div>
+<div class="card business">
+<h3>Business</h3>
+<div class="price">500rb</div>
+<p>50 Mbps</p>
+<p>Unlimited</p>
+</div>
+</div>
 </div>
 
-<div class="package">
-<h3>Family</h3>
-<span>20 Mbps</span>
-<p>Cocok untuk keluarga</p>
+<div class="container grid" id="daftar">
+<div class="form-box">
+<h3>Pendaftaran Pelanggan</h3>
+<input placeholder="Nama">
+<input placeholder="Alamat">
+<input placeholder="Nomor WhatsApp">
+<select>
+<option>Pilih Paket Internet</option>
+<option>Basic</option>
+<option>Home</option>
+<option>Business</option>
+</select>
+<button>Kirim Pendaftaran</button>
 </div>
 
-<div class="package">
-<h3>Bisnis</h3>
-<span>50 Mbps</span>
-<p>Internet cepat untuk usaha</p>
+<div class="form-box" id="area">
+<h3>Cek Jangkauan Area</h3>
+<p>Cek ketersediaan jaringan di wilayah Anda</p>
+<input placeholder="Masukkan Desa / Kecamatan">
+<button>Cek Area</button>
+</div>
 </div>
 
-</div>
+<section class="hotspot">
+<h1>ZONA</h1>
+<h2>HOTSPOT JEPARA</h2>
+<a class="login" href="#">LOGIN</a>
+<a class="voucher" href="#">BELI VOUCHER</a>
+</section>
 
-</div>
-
-
-<div class="card">
-
-<h2>Pembayaran</h2>
-
-<p>
-
-Transfer Bank<br>
-E-Wallet (DANA, ShopeePay)<br>
-Payment Gateway Duitku
-
-</p>
-
-</div>
-
-
-<div class="card">
-
-<h2>Area Layanan</h2>
-
-<p>Kami melayani wilayah Jepara dan sekitarnya.</p>
-
-<div class="map">
-
-<iframe
-src="https://maps.google.com/maps?q=Jepara%20Jawa%20Tengah&t=&z=11&ie=UTF8&iwloc=&output=embed"
-width="100%"
-height="350"
-style="border:0;">
-</iframe>
-
-</div>
-
-</div>
-
-
-<div class="card">
-
-<h2>Kontak</h2>
-
-<p>
-
-WhatsApp : 081215555328<br>
-Zona Komputer Jepara<br>
-Jepara - Jawa Tengah
-
-</p>
-
-<a class="btn" href="https://wa.me/6281215555328">
-
-Hubungi WhatsApp
-
-</a>
-
-</div>
-
-
-</div>
-
-<a class="whatsapp" href="https://wa.me/6281215555328">
-
-Chat WA
-
-</a>
-
-
-<footer>
-
-© 2026 Zona Komputer Jepara
-
+<footer id="kontak">
+<h3>PT Zona Indokonekta Prima</h3>
+<p>Zona Komputer Jepara</p>
+<p>Jepara - Jawa Tengah</p>
+<p>WhatsApp : 0812-1555-5328</p>
 </footer>
-
 
 </body>
 </html>
