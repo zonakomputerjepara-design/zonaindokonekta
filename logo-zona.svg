@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="500">
+  <rect width="500" height="500" rx="80" fill="#0d47a1"/>
+
+<text x="250" y="220" font-size="120" text-anchor="middle"
+fill="white" font-family="Arial" font-weight="bold">
+Z </text>
+
+<text x="250" y="320" font-size="42" text-anchor="middle"
+fill="white" font-family="Arial">
+ZONA KOMPUTER </text>
+
+<text x="250" y="370" font-size="34" text-anchor="middle"
+fill="white" font-family="Arial">
+JEPARA </text> </svg>
